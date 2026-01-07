@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastislav Drahos - Portfolio</title>
+    <meta name="description"
+        content="Premium portfolio of Rastislav Drahos - Computer Science student and web developer specializing in modern web applications.">
+    <link rel="stylesheet" href="css/simple-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header glass">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>RD.</span>
+            </div>
+            <nav class="nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="nav-link"
+                    style="background:none; border:none; cursor:pointer; color: var(--text-muted); font-weight: 600; font-size: 0.95rem;"
+                    aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero reveal" id="about">
+                <canvas id="particles-canvas"></canvas>
+
+                <!-- Floating Orbs -->
+                <div class="floating-orb orb-1"></div>
+                <div class="floating-orb orb-2"></div>
+                <div class="floating-orb orb-3"></div>
+
+                <div class="hero-content">
+                    <div class="avatar-container">
+                        <div class="avatar-ring"></div>
+                        <img src="Me.png" alt="Rastislav Drahos" class="avatar">
+                    </div>
+                    <h1 class="hero-title">Crafting Digital <span class="highlight">Masterpieces</span></h1>
+                    <p class="hero-subtitle">Rastislav Drahos — Full-Stack Developer & Designer</p>
+                    <p style="max-width: 700px; margin: 0 auto 3rem; color: var(--text-muted); font-size: 1.25rem;">
+                        Transforming ideas into exceptional web experiences through modern technologies,
+                        thoughtful design, and performance-driven development.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            Let's Collaborate <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            View My Work
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section reveal">
+                <div class="section-header">
+                    <h2>What I <span class="highlight">Bring</span></h2>
+                    <p class="section-subtitle">Expertise that drives results</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-card glass">
+                        <div class="about-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Pursuing Computer Science with specialized focus on scalable system architecture, modern web
+                            frameworks, and user experience design principles.</p>
+                    </div>
+                    <div class="about-card glass">
+                        <div class="about-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Expert in building responsive, accessible web applications using React, TypeScript, and
+                            modern CSS. Committed to performance and best practices.</p>
+                    </div>
+                    <div class="about-card glass">
+                        <div class="about-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Constantly exploring emerging technologies and design patterns to create cutting-edge digital
+                            solutions that exceed expectations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-section reveal" id="projects">
+                <div class="section-header">
+                    <h2>Featured <span class="highlight">Projects</span></h2>
+                    <p class="section-subtitle">Showcasing my best work</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Design System</h3>
+                            <p class="project-desc">A comprehensive design system with reusable components, ensuring
+                                consistency across all digital products.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <p class="project-desc">Real-time analytics platform with interactive data visualization and
+                                comprehensive reporting capabilities.</p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">D3.js</span>
+                                <span class="tag">API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Mobile Experience</h3>
+                            <p class="project-desc">Cross-platform mobile application delivering seamless user
+                                experiences on iOS and Android devices.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section reveal" id="skills">
+                <div class="section-header">
+                    <h2>Technical <span class="highlight">Expertise</span></h2>
+                    <p class="section-subtitle">Tools and technologies I master</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item glass" data-skill="95">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-item glass" data-skill="92">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-item glass" data-skill="88">
+                        <i class="fab fa-js skill-icon"></i>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item glass" data-skill="90">
+                        <i class="fab fa-react skill-icon"></i>
+                        <span class="skill-name">React</span>
+                    </div>
+                    <div class="skill-item glass" data-skill="85">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <span class="skill-name">Git</span>
+                    </div>
+                    <div class="skill-item glass" data-skill="80">
+                        <i class="fas fa-database skill-icon"></i>
+                        <span class="skill-name">SQL</span>
+                    </div>
+                    <div class="skill-item glass" data-skill="87">
+                        <i class="fab fa-python skill-icon"></i>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-item glass" data-skill="83">
+                        <i class="fas fa-terminal skill-icon"></i>
+                        <span class="skill-name">CLI Tools</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section reveal" id="contact">
+                <div class="section-header">
+                    <h2>Let's <span class="highlight">Connect</span></h2>
+                    <p class="section-subtitle">Open for exciting opportunities</p>
+                </div>
+                <div class="contact-content glass">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>rastislav.drahos@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Slovakia, Europe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Follow My Journey</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link glass" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link glass" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link glass" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link glass" aria-label="Dribbble">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Rastislav Drahos. Designed with precision.</p>
+            <p>Powered by <span class="highlight">passion & innovation</span></p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
